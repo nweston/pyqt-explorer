@@ -31,6 +31,8 @@ Children may be QWidgets or QLayouts."""
         for c in children:
             if isinstance(c, qt.QWidget):
                 self.addWidget(c)
+            elif isinstance(c, int):
+                self.addSpacing(c)
             else:
                 self.addLayout(c)
 
