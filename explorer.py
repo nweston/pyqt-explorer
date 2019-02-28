@@ -55,7 +55,7 @@ class VBox(qt.QVBoxLayout, EasyLayout):
         self._setup(margin, children)
 
 
-def signals(qobj):
+def signal_names(qobj):
     """Return names of all signals of an object."""
 
     # Figure out the type of signal objects. We can't hard-code this
@@ -65,27 +65,42 @@ def signals(qobj):
             if isinstance(getattr(qobj, name), signal_type)]
 
 
+def doc_for_attr(obj, name):
+    return getattr(obj, name).__doc__
+
+
 class ExplorerWidget(qt.QWidget):
     def __init__(self, widget, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self.widget = widget
         widget.setParent(self)
+
         self._output = qt.QTextEdit(parent=self)
         self._output.setReadOnly(True)
         clear_output = qt.QPushButton(
             parent=self, text='Clear', clicked=self._output.clear)
         clear_output.setAutoDefault(False)
 
+        doc = qt.QTextEdit(parent=self)
+
+        members = qt.QTreeWidget(parent=self)
+        members.setHeaderHidden(True)
+        members.itemClicked.connect(
+            lambda i: doc.setText(doc_for_attr(widget, i.text(0))))
+        self._populate_members(members, widget)
+
         HBox(
             self, margin=10,
             children=[
                 # Left side
-                VBox(children=[widget,
+                VBox(children=[50,
+                               widget,
+                               50,
                                self._output,
                                clear_output]),
                 # Right side
-                VBox(children=[qt.QLabel('members'),
-                               qt.QLabel('doc')])])
+                VBox(children=[members,
+                               doc])])
 
         self._connect_widget_signals()
 
@@ -94,15 +109,44 @@ class ExplorerWidget(qt.QWidget):
             self._output.append('%s(%s)' %
                                 (name, ', '.join(map(str, args))))
 
-        for name in signals(self.widget):
+        for name in signal_names(self.widget):
             sig = getattr(self.widget, name)
             sig.connect(partial(display_signal, name))
+
+    def _populate_members(self, members, widget):
+        signal_set = set(signal_names(widget))
+        constants = []
+        enums = []
+        signals = []
+        methods = []
+
+        for name in sorted(dir(widget)):
+            if not name.startswith('_'):
+                m = getattr(widget, name)
+                if name in signal_set:
+                    signals.append(name)
+                elif isinstance(m, type):
+                    enums.append(name)
+                elif callable(m):
+                    methods.append(name)
+                else:
+                    constants.append(name)
+
+        def add_top_level(name, children):
+            item = qt.QTreeWidgetItem([name])
+            item.addChildren([qt.QTreeWidgetItem([c]) for c in children])
+            members.addTopLevelItem(item)
+        add_top_level('Constants', constants)
+        add_top_level('Enums', enums)
+        add_top_level('Signals', signals)
+        add_top_level('Methods', methods)
 
 
 class ExplorerDialog(qt.QDialog):
     def __init__(self, widget, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self._explorer = ExplorerWidget(widget)
+        self.setMinimumSize(800, 1000)
         HBox(self, children=[self._explorer])
 
 
