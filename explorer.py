@@ -75,10 +75,10 @@ class ExplorerWidget(qt.QWidget):
         self.widget = widget
         widget.setParent(self)
 
-        self._output = qt.QTextEdit(parent=self)
-        self._output.setReadOnly(True)
+        output = qt.QTextEdit(parent=self)
+        output.setReadOnly(True)
         clear_output = qt.QPushButton(
-            parent=self, text='Clear', clicked=self._output.clear)
+            parent=self, text='Clear', clicked=output.clear)
         clear_output.setAutoDefault(False)
 
         doc = qt.QTextEdit(parent=self)
@@ -96,18 +96,17 @@ class ExplorerWidget(qt.QWidget):
                 VBox(children=[50,
                                widget,
                                50,
-                               self._output,
+                               output,
                                clear_output]),
                 # Right side
                 VBox(children=[members,
                                doc])])
 
-        self._connect_widget_signals()
+        self._connect_widget_signals(output)
 
-    def _connect_widget_signals(self):
+    def _connect_widget_signals(self, output):
         def display_signal(name, *args):
-            self._output.append('%s(%s)' %
-                                (name, ', '.join(map(str, args))))
+            output.append('%s(%s)' % (name, ', '.join(map(str, args))))
 
         for name in signal_names(self.widget):
             sig = getattr(self.widget, name)
