@@ -2,6 +2,7 @@ import qt
 import requests
 import docscraper
 from functools import partial
+import threading
 
 
 class EasyLayout():
@@ -90,7 +91,9 @@ documentation."""
         self.widget = widget
         widget.setParent(self)
 
-        scraper = create_scraper(widget)
+        self._scraper = None
+        self._doc_thread = threading.Thread(target=self._create_scraper)
+        self._doc_thread.start()
 
         output = qt.QTextEdit(parent=self)
         output.setReadOnly(True)
@@ -102,8 +105,7 @@ documentation."""
 
         members = qt.QTreeWidget(parent=self)
         members.setHeaderHidden(True)
-        members.itemClicked.connect(
-            lambda i: doc.setHtml(scraper.get_doc(i.text(0))))
+        members.itemClicked.connect(partial(self._show_doc, doc))
         self._populate_members(members, widget)
 
         HBox(
@@ -120,6 +122,15 @@ documentation."""
                                doc])])
 
         self._connect_widget_signals(output)
+
+    def _create_scraper(self):
+        self._scraper = create_scraper(self.widget)
+
+    def _show_doc(self, doc, item, i):
+        if self._scraper:
+            doc.setHtml(self._scraper.get_doc(item.text(0)))
+        else:
+            doc.setText('<docs not loaded>')
 
     def _connect_widget_signals(self, output):
         def display_signal(name, *args):
