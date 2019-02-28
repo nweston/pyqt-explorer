@@ -70,6 +70,11 @@ def doc_for_attr(obj, name):
 
 
 class ExplorerWidget(qt.QWidget):
+    """Interactively explores the operation of a single widget.
+
+Displays signals as they are emitted, along with members and
+documentation."""
+
     def __init__(self, widget, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self.widget = widget
@@ -142,6 +147,8 @@ class ExplorerWidget(qt.QWidget):
 
 
 class ExplorerDialog(qt.QDialog):
+    """A Dialog containing an ExplorerWidget."""
+
     def __init__(self, widget, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self._explorer = ExplorerWidget(widget)
@@ -150,6 +157,7 @@ class ExplorerDialog(qt.QDialog):
 
 
 def explore(widget):
+    """Create and execute an explorer dialog."""
     dialog = ExplorerDialog(widget)
     dialog.exec_()
 
