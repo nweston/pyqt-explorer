@@ -11,6 +11,8 @@ ipython = "*"
 [packages]
 qt-py = "*"
 pyside2 = "*"
+beautifulsoup4 = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"

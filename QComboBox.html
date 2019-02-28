@@ -1,0 +1,1624 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>QComboBox &#8212; Qt for Python</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.12.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../../search.html" />
+  <link rel="stylesheet" type="text/css" href="/style/pyside.css" />
+  <link rel="icon" type="image/png" href="/style/pyside-32px.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/style/pyside-16px.png" sizes="16x16" />
+  <script type="text/javascript"> wpThemeFolder = 'http://qt.io/wp-content/themes/oneqt'; </script>
+  <script type="text/javascript" src="/scripts/main.js"></script>
+  <script type="text/javascript" src="/scripts/extras.js"></script>
+  <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-54043535-2', 'qt.io');
+    ga('set', 'forceSSL', true);
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body>
+<div id="container">
+    <div class="header">
+        <div class="header_container">
+            <header id="navbar">
+            </header>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-rounded">
+            <div class="navigationbar">
+                <ul class="sub-navigation">
+                    <li><a href="http://wiki.qt.io/">Wiki</a></li>
+                    <li><a href="https://doc.qt.io/">Documentation</a></li>
+                    <li><a href="http://forum.qt.io/">Forum</a></li>
+                    <li><a href="https://bugreports.qt.io/">Bug Reports</a></li>
+                    <li><a href="https://codereview.qt-project.org/">Code Review</a></li>
+                </ul>
+                <div id="main_title_bar"><h1>Qt Documentation</h1></div>
+                <div class="related">
+                    <ul>
+                        
+                        <li><a href="../../index.html">Qt for Python 5.12</a></li> 
+                    </ul>
+                </div>
+            </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">QComboBox</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#virtual-functions">Virtual functions</a></li>
+<li><a class="reference internal" href="#slots">Slots</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#detailed-description">Detailed Description</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" id="q" size="18" />
+      <input type="submit" value="Go" id="search_button" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="module-PySide2.QtWidgets"></span><div class="section" id="qcombobox">
+<span id="id1"></span><h1>QComboBox<a class="headerlink" href="#qcombobox" title="Permalink to this headline">¶</a></h1>
+<p><strong>Inherited by:</strong> <a class="reference internal" href="QFontComboBox.html#qfontcombobox"><span class="std std-ref">QFontComboBox</span></a></p>
+<div class="section" id="synopsis">
+<h2>Synopsis<a class="headerlink" href="#synopsis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<div class="function-list docutils container">
+<ul class="simple">
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem"><code class="xref py py-meth docutils literal"><span class="pre">addItem</span></code></a> (icon, text[, userData=None])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem"><code class="xref py py-meth docutils literal"><span class="pre">addItem</span></code></a> (text[, userData=None])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItems"><code class="xref py py-meth docutils literal"><span class="pre">addItems</span></code></a> (texts)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion"><code class="xref py py-meth docutils literal"><span class="pre">autoCompletion</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">autoCompletionCaseSensitivity</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer"><code class="xref py py-meth docutils literal"><span class="pre">completer</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count"><code class="xref py py-meth docutils literal"><span class="pre">count</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentData"><code class="xref py py-meth docutils literal"><span class="pre">currentData</span></code></a> ([role=Qt.UserRole])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex"><code class="xref py py-meth docutils literal"><span class="pre">currentIndex</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText"><code class="xref py py-meth docutils literal"><span class="pre">currentText</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled"><code class="xref py py-meth docutils literal"><span class="pre">duplicatesEnabled</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findData"><code class="xref py py-meth docutils literal"><span class="pre">findData</span></code></a> (data[, role=Qt.UserRole[, flags=static_cast&lt;Qt.MatchFlags&gt;(Qt.MatchExactly|Qt.MatchCaseSensitive)]])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findText"><code class="xref py py-meth docutils literal"><span class="pre">findText</span></code></a> (text[, flags=static_cast&lt;Qt.MatchFlags&gt;(Qt.MatchExactly|Qt.MatchCaseSensitive)])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame"><code class="xref py py-meth docutils literal"><span class="pre">hasFrame</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize"><code class="xref py py-meth docutils literal"><span class="pre">iconSize</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.initStyleOption" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.initStyleOption"><code class="xref py py-meth docutils literal"><span class="pre">initStyleOption</span></code></a> (option)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.inputMethodQuery" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.inputMethodQuery"><code class="xref py py-meth docutils literal"><span class="pre">inputMethodQuery</span></code></a> (query, argument)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">insertItem</span></code></a> (index, icon, text[, userData=None])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">insertItem</span></code></a> (index, text[, userData=None])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems"><code class="xref py py-meth docutils literal"><span class="pre">insertItems</span></code></a> (index, texts)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy"><code class="xref py py-meth docutils literal"><span class="pre">insertPolicy</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertSeparator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertSeparator"><code class="xref py py-meth docutils literal"><span class="pre">insertSeparator</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable"><code class="xref py py-meth docutils literal"><span class="pre">isEditable</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData"><code class="xref py py-meth docutils literal"><span class="pre">itemData</span></code></a> (index[, role=Qt.UserRole])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate"><code class="xref py py-meth docutils literal"><span class="pre">itemDelegate</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon"><code class="xref py py-meth docutils literal"><span class="pre">itemIcon</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText"><code class="xref py py-meth docutils literal"><span class="pre">itemText</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit"><code class="xref py py-meth docutils literal"><span class="pre">lineEdit</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount"><code class="xref py py-meth docutils literal"><span class="pre">maxCount</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems"><code class="xref py py-meth docutils literal"><span class="pre">maxVisibleItems</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength"><code class="xref py py-meth docutils literal"><span class="pre">minimumContentsLength</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model"><code class="xref py py-meth docutils literal"><span class="pre">model</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn"><code class="xref py py-meth docutils literal"><span class="pre">modelColumn</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem"><code class="xref py py-meth docutils literal"><span class="pre">removeItem</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex"><code class="xref py py-meth docutils literal"><span class="pre">rootModelIndex</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion"><code class="xref py py-meth docutils literal"><span class="pre">setAutoCompletion</span></code></a> (enable)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">setAutoCompletionCaseSensitivity</span></code></a> (sensitivity)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">setCompleter</span></code></a> (c)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled"><code class="xref py py-meth docutils literal"><span class="pre">setDuplicatesEnabled</span></code></a> (enable)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable"><code class="xref py py-meth docutils literal"><span class="pre">setEditable</span></code></a> (editable)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setFrame" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setFrame"><code class="xref py py-meth docutils literal"><span class="pre">setFrame</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize"><code class="xref py py-meth docutils literal"><span class="pre">setIconSize</span></code></a> (size)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy"><code class="xref py py-meth docutils literal"><span class="pre">setInsertPolicy</span></code></a> (policy)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData"><code class="xref py py-meth docutils literal"><span class="pre">setItemData</span></code></a> (index, value[, role=Qt.UserRole])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate"><code class="xref py py-meth docutils literal"><span class="pre">setItemDelegate</span></code></a> (delegate)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon"><code class="xref py py-meth docutils literal"><span class="pre">setItemIcon</span></code></a> (index, icon)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText"><code class="xref py py-meth docutils literal"><span class="pre">setItemText</span></code></a> (index, text)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit"><code class="xref py py-meth docutils literal"><span class="pre">setLineEdit</span></code></a> (edit)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount"><code class="xref py py-meth docutils literal"><span class="pre">setMaxCount</span></code></a> (max)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems"><code class="xref py py-meth docutils literal"><span class="pre">setMaxVisibleItems</span></code></a> (maxItems)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength"><code class="xref py py-meth docutils literal"><span class="pre">setMinimumContentsLength</span></code></a> (characters)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel"><code class="xref py py-meth docutils literal"><span class="pre">setModel</span></code></a> (model)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn"><code class="xref py py-meth docutils literal"><span class="pre">setModelColumn</span></code></a> (visibleColumn)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex"><code class="xref py py-meth docutils literal"><span class="pre">setRootModelIndex</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy"><code class="xref py py-meth docutils literal"><span class="pre">setSizeAdjustPolicy</span></code></a> (policy)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator"><code class="xref py py-meth docutils literal"><span class="pre">setValidator</span></code></a> (v)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView"><code class="xref py py-meth docutils literal"><span class="pre">setView</span></code></a> (itemView)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy"><code class="xref py py-meth docutils literal"><span class="pre">sizeAdjustPolicy</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator"><code class="xref py py-meth docutils literal"><span class="pre">validator</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view"><code class="xref py py-meth docutils literal"><span class="pre">view</span></code></a> ()</li>
+</ul>
+</div>
+</div>
+<div class="section" id="virtual-functions">
+<h3>Virtual functions<a class="headerlink" href="#virtual-functions" title="Permalink to this headline">¶</a></h3>
+<div class="function-list docutils container">
+<ul class="simple">
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup"><code class="xref py py-meth docutils literal"><span class="pre">hidePopup</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup"><code class="xref py py-meth docutils literal"><span class="pre">showPopup</span></code></a> ()</li>
+</ul>
+</div>
+</div>
+<div class="section" id="slots">
+<h3>Slots<a class="headerlink" href="#slots" title="Permalink to this headline">¶</a></h3>
+<div class="function-list docutils container">
+<ul class="simple">
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear"><code class="xref py py-meth docutils literal"><span class="pre">clear</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText"><code class="xref py py-meth docutils literal"><span class="pre">clearEditText</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex"><code class="xref py py-meth docutils literal"><span class="pre">setCurrentIndex</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText"><code class="xref py py-meth docutils literal"><span class="pre">setCurrentText</span></code></a> (text)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditText"><code class="xref py py-meth docutils literal"><span class="pre">setEditText</span></code></a> (text)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="signals">
+<h3>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h3>
+<div class="function-list docutils container">
+<ul class="simple">
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated"><code class="xref py py-meth docutils literal"><span class="pre">activated</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated"><code class="xref py py-meth docutils literal"><span class="pre">activated</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged"><code class="xref py py-meth docutils literal"><span class="pre">currentIndexChanged</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged"><code class="xref py py-meth docutils literal"><span class="pre">currentIndexChanged</span></code></a> (index)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentTextChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentTextChanged"><code class="xref py py-meth docutils literal"><span class="pre">currentTextChanged</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged"><code class="xref py py-meth docutils literal"><span class="pre">editTextChanged</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted"><code class="xref py py-meth docutils literal"><span class="pre">highlighted</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted"><code class="xref py py-meth docutils literal"><span class="pre">highlighted</span></code></a> (index)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="detailed-description">
+<h2>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> widget is a combined button and popup list.</p>
+<img alt="../../_images/windows-combobox.png" src="../../_images/windows-combobox.png" />
+<p>A <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> provides a means of presenting a list of options to the user in a way that takes up the minimum amount of screen space.</p>
+<p>A combobox is a selection widget that displays the current item, and can pop up a list of selectable items. A combobox may be editable, allowing the user to modify each item in the list.</p>
+<p>Comboboxes can contain pixmaps as well as strings; the <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItem()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemText()</span></code></a> functions are suitably overloaded. For editable comboboxes, the function <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.clearEditText()</span></code></a> is provided, to clear the displayed string without changing the combobox’s contents.</p>
+<p>There are two signals emitted if the current item of a combobox changes, <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.currentIndexChanged()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.activated()</span></code></a> . <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.currentIndexChanged()</span></code></a> is always emitted regardless if the change was done programmatically or by user interaction, while <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.activated()</span></code></a> is only emitted when the change is caused by user interaction. The <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.highlighted()</span></code></a> signal is emitted when the user highlights an item in the combobox popup list. All three signals exist in two versions, one with a <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QString</span></code> argument and one with an <code class="docutils literal"><span class="pre">int</span></code> argument. If the user selects or highlights a pixmap, only the <code class="docutils literal"><span class="pre">int</span></code> signals are emitted. Whenever the text of an editable combobox is changed the <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.editTextChanged()</span></code></a> signal is emitted.</p>
+<p>When the user enters a new string in an editable combobox, the widget may or may not insert it, and it can insert it in several locations. The default policy is <code class="xref py py-attr docutils literal"><span class="pre">InsertAtBottom</span></code> but you can change this using <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setInsertPolicy()</span></code></a> .</p>
+<p>It is possible to constrain the input to an editable combobox using <a class="reference internal" href="../QtGui/QValidator.html#PySide2.QtGui.QValidator" title="PySide2.QtGui.QValidator"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QValidator</span></code></a> ; see <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setValidator()</span></code></a> . By default, any input is accepted.</p>
+<p>A combobox can be populated using the insert functions, <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItem()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItems()</span></code></a> for example. Items can be changed with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemText()</span></code></a> . An item can be removed with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.removeItem()</span></code></a> and all items can be removed with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.clear()</span></code></a> . The text of the current item is returned by <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.currentText()</span></code></a> , and the text of a numbered item is returned with text(). The current item can be set with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCurrentIndex()</span></code></a> . The number of items in the combobox is returned by <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.count()</span></code></a> ; the maximum number of items can be set with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setMaxCount()</span></code></a> . You can allow editing using <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setEditable()</span></code></a> . For editable comboboxes you can set auto-completion using <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a> and whether or not the user can add duplicates is set with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setDuplicatesEnabled()</span></code></a> .</p>
+<p><a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> uses the <a class="reference internal" href="../../overviews/model-view-programming.html#model-view-programming"><span class="std std-ref">model/view framework</span></a> for its popup list and to store its items. By default a <a class="reference internal" href="../QtGui/QStandardItemModel.html#PySide2.QtGui.QStandardItemModel" title="PySide2.QtGui.QStandardItemModel"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QStandardItemModel</span></code></a> stores the items and a <a class="reference internal" href="QListView.html#PySide2.QtWidgets.QListView" title="PySide2.QtWidgets.QListView"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QListView</span></code></a> subclass displays the popuplist. You can access the model and view directly (with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.model()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.view()</span></code></a> ), but <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> also provides functions to set and get item data (e.g., <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemData()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.itemText()</span></code></a> ). You can also set a new model and view (with <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setModel()</span></code></a> and <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setView()</span></code></a> ). For the text and icon in the combobox label, the data in the model that has the <code class="xref py py-attr docutils literal"><span class="pre">Qt.DisplayRole</span></code> and <code class="xref py py-attr docutils literal"><span class="pre">Qt.DecorationRole</span></code> is used. Note that you cannot alter the <code class="xref py py-attr docutils literal"><span class="pre">QAbstractItemView.SelectionMode</span></code> of the <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.view()</span></code></a> , e.g., by using <a class="reference internal" href="QAbstractItemView.html#PySide2.QtWidgets.PySide2.QtWidgets.QAbstractItemView.setSelectionMode" title="PySide2.QtWidgets.PySide2.QtWidgets.QAbstractItemView.setSelectionMode"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemView.setSelectionMode()</span></code></a> .</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="QLineEdit.html#PySide2.QtWidgets.QLineEdit" title="PySide2.QtWidgets.QLineEdit"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QLineEdit</span></code></a>  <a class="reference internal" href="QSpinBox.html#PySide2.QtWidgets.QSpinBox" title="PySide2.QtWidgets.QSpinBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QSpinBox</span></code></a>  <a class="reference internal" href="QRadioButton.html#PySide2.QtWidgets.QRadioButton" title="PySide2.QtWidgets.QRadioButton"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QRadioButton</span></code></a>  <a class="reference internal" href="QButtonGroup.html#PySide2.QtWidgets.QButtonGroup" title="PySide2.QtWidgets.QButtonGroup"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QButtonGroup</span></code></a>  <a class="reference internal" href="../../overviews/guibooks.html#books-about-gui-design"><span class="std std-ref">GUI Design Handbook: Combo Box, Drop-Down List Box</span></a></p>
+</div>
+</div></blockquote>
+<dl class="class">
+<dt id="PySide2.QtWidgets.QComboBox">
+<em class="property">class </em><code class="descclassname">PySide2.QtWidgets.</code><code class="descname">QComboBox</code><span class="sig-paren">(</span><span class="optional">[</span><em>parent=nullptr</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.QComboBox" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parent</strong> – <a class="reference internal" href="QWidget.html#PySide2.QtWidgets.QWidget" title="PySide2.QtWidgets.QWidget"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QWidget</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a combobox with the given <code class="docutils literal"><span class="pre">parent</span></code> , using the default model <a class="reference internal" href="../QtGui/QStandardItemModel.html#PySide2.QtGui.QStandardItemModel" title="PySide2.QtGui.QStandardItemModel"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QStandardItemModel</span></code></a> .</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">InsertPolicy</code><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This enum specifies what the <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> should do when a new string is entered by the user.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="68%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Constant</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>QComboBox.NoInsert</td>
+<td>The string will not be inserted into the combobox.</td>
+</tr>
+<tr class="row-odd"><td>QComboBox.InsertAtTop</td>
+<td>The string will be inserted as the first item in the combobox.</td>
+</tr>
+<tr class="row-even"><td>QComboBox.InsertAtCurrent</td>
+<td>The current item will be <em>replaced</em> by the string.</td>
+</tr>
+<tr class="row-odd"><td>QComboBox.InsertAtBottom</td>
+<td>The string will be inserted after the last item in the combobox.</td>
+</tr>
+<tr class="row-even"><td>QComboBox.InsertAfterCurrent</td>
+<td>The string is inserted after the current item in the combobox.</td>
+</tr>
+<tr class="row-odd"><td>QComboBox.InsertBeforeCurrent</td>
+<td>The string is inserted before the current item in the combobox.</td>
+</tr>
+<tr class="row-even"><td>QComboBox.InsertAlphabetically</td>
+<td>The string is inserted in the alphabetic order in the combobox.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">SizeAdjustPolicy</code><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><p>This enum specifies how the size hint of the <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> should adjust when new content is added or content changes.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Constant</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>QComboBox.AdjustToContents</td>
+<td>The combobox will always adjust to the contents</td>
+</tr>
+<tr class="row-odd"><td>QComboBox.AdjustToContentsOnFirstShow</td>
+<td>The combobox will adjust to its contents the first time it is shown.</td>
+</tr>
+<tr class="row-even"><td>QComboBox.AdjustToMinimumContentsLength</td>
+<td>Use or instead.</td>
+</tr>
+<tr class="row-odd"><td>QComboBox.AdjustToMinimumContentsLengthWithIcon</td>
+<td>The combobox will adjust to <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.minimumContentsLength()</span></code></a> plus space for an icon. For performance reasons use this policy on large models.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">activated</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.activated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">activated</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">addItem</code><span class="sig-paren">(</span><em>text</em><span class="optional">[</span>, <em>userData=None</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItem" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>text</strong> – unicode</li>
+<li><strong>userData</strong> – object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an item to the combobox with the given <code class="docutils literal"><span class="pre">text</span></code> , and containing the specified <code class="docutils literal"><span class="pre">userData</span></code> (stored in the <code class="xref py py-attr docutils literal"><span class="pre">Qt.UserRole</span></code> ). The item is appended to the list of existing items.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">addItem</code><span class="sig-paren">(</span><em>icon</em>, <em>text</em><span class="optional">[</span>, <em>userData=None</em><span class="optional">]</span><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>icon</strong> – <a class="reference internal" href="../QtGui/QIcon.html#PySide2.QtGui.QIcon" title="PySide2.QtGui.QIcon"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QIcon</span></code></a></li>
+<li><strong>text</strong> – unicode</li>
+<li><strong>userData</strong> – object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Adds an item to the combobox with the given <code class="docutils literal"><span class="pre">icon</span></code> and <code class="docutils literal"><span class="pre">text</span></code> , and containing the specified <code class="docutils literal"><span class="pre">userData</span></code> (stored in the <code class="xref py py-attr docutils literal"><span class="pre">Qt.UserRole</span></code> ). The item is appended to the list of existing items.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItems">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">addItems</code><span class="sig-paren">(</span><em>texts</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.addItems" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>texts</strong> – list of strings</td>
+</tr>
+</tbody>
+</table>
+<p>Adds each of the strings in the given <code class="docutils literal"><span class="pre">texts</span></code> to the combobox. Each item is appended to the list of existing items in turn.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">autoCompletion</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Use <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a> instead.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setAutoCompletion()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">autoCompletionCaseSensitivity</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtCore.Qt.CaseSensitivity</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Use <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a> and <a class="reference internal" href="QCompleter.html#PySide2.QtWidgets.PySide2.QtWidgets.QCompleter.setCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QCompleter.setCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">QCompleter.setCaseSensitivity()</span></code></a> instead.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the combobox, removing all items.</p>
+<p>Note: If you have set an external model on the combobox this model will still be cleared when calling this function.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">clearEditText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clearEditText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the contents of the line edit used for editing in the combobox.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">completer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="QCompleter.html#PySide2.QtWidgets.QCompleter" title="PySide2.QtWidgets.QCompleter"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QCompleter</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the completer that is used to auto complete text input for the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a>  <code class="xref py py-meth docutils literal"><span class="pre">editable()</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.count" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentData">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentData</code><span class="sig-paren">(</span><span class="optional">[</span><em>role=Qt.UserRole</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentData" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>role</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtCore/QJsonDocument.html#PySide2.QtCore.PySide2.QtCore.QJsonDocument.object" title="PySide2.QtCore.PySide2.QtCore.QJsonDocument.object">object</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCurrentIndex()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentIndexChanged</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndexChanged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentIndexChanged</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentText</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCurrentText()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentTextChanged">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">currentTextChanged</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentTextChanged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">duplicatesEnabled</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setDuplicatesEnabled()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">editTextChanged</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.editTextChanged" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findData">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">findData</code><span class="sig-paren">(</span><em>data</em><span class="optional">[</span>, <em>role=Qt.UserRole</em><span class="optional">[</span>, <em>flags=static_cast&lt;Qt.MatchFlags&gt;(Qt.MatchExactly|Qt.MatchCaseSensitive)</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findData" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> – object</li>
+<li><strong>role</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>flags</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.Qt.MatchFlags</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the index of the item containing the given <code class="docutils literal"><span class="pre">data</span></code> for the given <code class="docutils literal"><span class="pre">role</span></code> ; otherwise returns -1.</p>
+<p>The <code class="docutils literal"><span class="pre">flags</span></code> specify how the items in the combobox are searched.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">findText</code><span class="sig-paren">(</span><em>text</em><span class="optional">[</span>, <em>flags=static_cast&lt;Qt.MatchFlags&gt;(Qt.MatchExactly|Qt.MatchCaseSensitive)</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.findText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>text</strong> – unicode</li>
+<li><strong>flags</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.Qt.MatchFlags</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the index of the item containing the given <code class="docutils literal"><span class="pre">text</span></code> ; otherwise returns -1.</p>
+<p>The <code class="docutils literal"><span class="pre">flags</span></code> specify how the items in the combobox are searched.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">hasFrame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">hidePopup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hides the list of items in the combobox if it is currently visible and resets the internal state, so that if the custom pop-up was shown inside the reimplemented <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.showPopup()</span></code></a> , then you also need to reimplement the function to hide your custom pop-up and call the base class implementation to reset the internal state whenever your custom pop-up widget is hidden.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.showPopup()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">highlighted</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.highlighted" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">highlighted</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">iconSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtCore/QSize.html#PySide2.QtCore.QSize" title="PySide2.QtCore.QSize"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QSize</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setIconSize()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.initStyleOption">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">initStyleOption</code><span class="sig-paren">(</span><em>option</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.initStyleOption" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>option</strong> – <a class="reference internal" href="QStyleOptionComboBox.html#PySide2.QtWidgets.QStyleOptionComboBox" title="PySide2.QtWidgets.QStyleOptionComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QStyleOptionComboBox</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Initialize <code class="docutils literal"><span class="pre">option</span></code> with the values from this <a class="reference internal" href="#PySide2.QtWidgets.QComboBox" title="PySide2.QtWidgets.QComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox</span></code></a> . This method is useful for subclasses when they need a <a class="reference internal" href="QStyleOptionComboBox.html#PySide2.QtWidgets.QStyleOptionComboBox" title="PySide2.QtWidgets.QStyleOptionComboBox"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QStyleOptionComboBox</span></code></a> , but don’t want to fill in all the information themselves.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="QStyleOption.html#PySide2.QtWidgets.PySide2.QtWidgets.QStyleOption.initFrom" title="PySide2.QtWidgets.PySide2.QtWidgets.QStyleOption.initFrom"><code class="xref py py-meth docutils literal"><span class="pre">QStyleOption.initFrom()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.inputMethodQuery">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">inputMethodQuery</code><span class="sig-paren">(</span><em>query</em>, <em>argument</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.inputMethodQuery" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>query</strong> – <code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtCore.Qt.InputMethodQuery</span></code></li>
+<li><strong>argument</strong> – object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../QtCore/QJsonDocument.html#PySide2.QtCore.PySide2.QtCore.QJsonDocument.object" title="PySide2.QtCore.PySide2.QtCore.QJsonDocument.object">object</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">insertItem</code><span class="sig-paren">(</span><em>index</em>, <em>text</em><span class="optional">[</span>, <em>userData=None</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>text</strong> – unicode</li>
+<li><strong>userData</strong> – object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts the <code class="docutils literal"><span class="pre">text</span></code> and <code class="docutils literal"><span class="pre">userData</span></code> (stored in the <code class="xref py py-attr docutils literal"><span class="pre">Qt.UserRole</span></code> ) into the combobox at the given <code class="docutils literal"><span class="pre">index</span></code> .</p>
+<p>If the index is equal to or higher than the total number of items, the new item is appended to the list of existing items. If the index is zero or negative, the new item is prepended to the list of existing items.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItems()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">insertItem</code><span class="sig-paren">(</span><em>index</em>, <em>icon</em>, <em>text</em><span class="optional">[</span>, <em>userData=None</em><span class="optional">]</span><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>icon</strong> – <a class="reference internal" href="../QtGui/QIcon.html#PySide2.QtGui.QIcon" title="PySide2.QtGui.QIcon"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QIcon</span></code></a></li>
+<li><strong>text</strong> – unicode</li>
+<li><strong>userData</strong> – object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts the <code class="docutils literal"><span class="pre">icon</span></code> , <code class="docutils literal"><span class="pre">text</span></code> and <code class="docutils literal"><span class="pre">userData</span></code> (stored in the <code class="xref py py-attr docutils literal"><span class="pre">Qt.UserRole</span></code> ) into the combobox at the given <code class="docutils literal"><span class="pre">index</span></code> .</p>
+<p>If the index is equal to or higher than the total number of items, the new item is appended to the list of existing items. If the index is zero or negative, the new item is prepended to the list of existing items.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItems()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">insertItems</code><span class="sig-paren">(</span><em>index</em>, <em>texts</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItems" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>texts</strong> – list of strings</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Inserts the strings from the <code class="docutils literal"><span class="pre">list</span></code> into the combobox as separate items, starting at the <code class="docutils literal"><span class="pre">index</span></code> specified.</p>
+<p>If the index is equal to or higher than the total number of items, the new items are appended to the list of existing items. If the index is zero or negative, the new items are prepended to the list of existing items.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItem()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">insertPolicy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy"><code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.InsertPolicy</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setInsertPolicy()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertSeparator">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">insertSeparator</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertSeparator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Inserts a separator item into the combobox at the given <code class="docutils literal"><span class="pre">index</span></code> .</p>
+<p>If the index is equal to or higher than the total number of items, the new item is appended to the list of existing items. If the index is zero or negative, the new item is prepended to the list of existing items.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertItem"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertItem()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">isEditable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">itemData</code><span class="sig-paren">(</span><em>index</em><span class="optional">[</span>, <em>role=Qt.UserRole</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>role</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="../QtCore/QJsonDocument.html#PySide2.QtCore.PySide2.QtCore.QJsonDocument.object" title="PySide2.QtCore.PySide2.QtCore.QJsonDocument.object">object</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the data for the given <code class="docutils literal"><span class="pre">role</span></code> in the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox, or <code class="xref py py-attr docutils literal"><span class="pre">QVariant.Invalid</span></code> if there is no data for this role.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemData()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">itemDelegate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="QAbstractItemDelegate.html#PySide2.QtWidgets.QAbstractItemDelegate" title="PySide2.QtWidgets.QAbstractItemDelegate"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemDelegate</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the item delegate used by the popup list view.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemDelegate()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">itemIcon</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtGui/QIcon.html#PySide2.QtGui.QIcon" title="PySide2.QtGui.QIcon"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QIcon</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the icon for the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemIcon()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">itemText</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">unicode</td>
+</tr>
+</tbody>
+</table>
+<p>Returns the text for the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setItemText()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">lineEdit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="QLineEdit.html#PySide2.QtWidgets.QLineEdit" title="PySide2.QtWidgets.QLineEdit"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QLineEdit</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the line edit used to edit items in the combobox, or 0 if there is no line edit.</p>
+<p>Only editable combo boxes have a line edit.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setLineEdit()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">maxCount</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setMaxCount()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">maxVisibleItems</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setMaxVisibleItems()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">minimumContentsLength</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setMinimumContentsLength()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtCore/QAbstractItemModel.html#PySide2.QtCore.QAbstractItemModel" title="PySide2.QtCore.QAbstractItemModel"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QAbstractItemModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the model used by the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setModel()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">modelColumn</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setModelColumn()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">removeItem</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.removeItem" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Removes the item at the given <code class="docutils literal"><span class="pre">index</span></code> from the combobox. This will update the current index if the index is removed.</p>
+<p>This function does nothing if <code class="docutils literal"><span class="pre">index</span></code> is out of range.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">rootModelIndex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtCore/QModelIndex.html#PySide2.QtCore.QModelIndex" title="PySide2.QtCore.QModelIndex"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QModelIndex</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the root model item index for the items in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setRootModelIndex()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setAutoCompletion</code><span class="sig-paren">(</span><em>enable</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletion" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enable</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Use <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a> instead.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletion"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.autoCompletion()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setAutoCompletionCaseSensitivity</code><span class="sig-paren">(</span><em>sensitivity</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setAutoCompletionCaseSensitivity" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sensitivity</strong> – <code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtCore.Qt.CaseSensitivity</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Use <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setCompleter()</span></code></a> and <a class="reference internal" href="QCompleter.html#PySide2.QtWidgets.PySide2.QtWidgets.QCompleter.setCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QCompleter.setCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">QCompleter.setCaseSensitivity()</span></code></a> instead.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.autoCompletionCaseSensitivity()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setCompleter</code><span class="sig-paren">(</span><em>c</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCompleter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>c</strong> – <a class="reference internal" href="QCompleter.html#PySide2.QtWidgets.QCompleter" title="PySide2.QtWidgets.QCompleter"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QCompleter</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <code class="docutils literal"><span class="pre">completer</span></code> to use instead of the current completer. If <code class="docutils literal"><span class="pre">completer</span></code> is 0, auto completion is disabled.</p>
+<p>By default, for an editable combo box, a <a class="reference internal" href="QCompleter.html#PySide2.QtWidgets.QCompleter" title="PySide2.QtWidgets.QCompleter"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QCompleter</span></code></a> that performs case insensitive inline completion is automatically created.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The completer is removed when the <code class="xref py py-meth docutils literal"><span class="pre">editable()</span></code> property becomes <code class="docutils literal"><span class="pre">false</span></code> .</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.completer"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.completer()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setCurrentIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentIndex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentIndex"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.currentIndex()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setCurrentText</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setCurrentText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.currentText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.currentText()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setDuplicatesEnabled</code><span class="sig-paren">(</span><em>enable</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setDuplicatesEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>enable</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.duplicatesEnabled"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.duplicatesEnabled()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setEditText</code><span class="sig-paren">(</span><em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> – unicode</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <code class="docutils literal"><span class="pre">text</span></code> in the combobox’s text edit.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setEditable</code><span class="sig-paren">(</span><em>editable</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setEditable" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>editable</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.isEditable"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.isEditable()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setFrame">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setFrame</code><span class="sig-paren">(</span><em>arg__1</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setFrame" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>arg__1</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hasFrame"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.hasFrame()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setIconSize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>size</strong> – <a class="reference internal" href="../QtCore/QSize.html#PySide2.QtCore.QSize" title="PySide2.QtCore.QSize"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QSize</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.iconSize"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.iconSize()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setInsertPolicy</code><span class="sig-paren">(</span><em>policy</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setInsertPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>policy</strong> – <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.InsertPolicy"><code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.InsertPolicy</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.insertPolicy"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.insertPolicy()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setItemData</code><span class="sig-paren">(</span><em>index</em>, <em>value</em><span class="optional">[</span>, <em>role=Qt.UserRole</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemData" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>value</strong> – object</li>
+<li><strong>role</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the data <code class="docutils literal"><span class="pre">role</span></code> for the item on the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox to the specified <code class="docutils literal"><span class="pre">value</span></code> .</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemData"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.itemData()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setItemDelegate</code><span class="sig-paren">(</span><em>delegate</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemDelegate" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>delegate</strong> – <a class="reference internal" href="QAbstractItemDelegate.html#PySide2.QtWidgets.QAbstractItemDelegate" title="PySide2.QtWidgets.QAbstractItemDelegate"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemDelegate</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the item <code class="docutils literal"><span class="pre">delegate</span></code> for the popup list view. The combobox takes ownership of the delegate.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You should not share the same instance of a delegate between comboboxes, widget mappers or views. Doing so can cause incorrect or unintuitive editing behavior since each view connected to a given delegate may receive the <a class="reference internal" href="QAbstractItemDelegate.html#PySide2.QtWidgets.PySide2.QtWidgets.QAbstractItemDelegate.closeEditor" title="PySide2.QtWidgets.PySide2.QtWidgets.QAbstractItemDelegate.closeEditor"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemDelegate.closeEditor()</span></code></a> signal, and attempt to access, modify or close an editor that has already been closed.</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemDelegate"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.itemDelegate()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setItemIcon</code><span class="sig-paren">(</span><em>index</em>, <em>icon</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemIcon" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>icon</strong> – <a class="reference internal" href="../QtGui/QIcon.html#PySide2.QtGui.QIcon" title="PySide2.QtGui.QIcon"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QIcon</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <code class="docutils literal"><span class="pre">icon</span></code> for the item on the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemIcon"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.itemIcon()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setItemText</code><span class="sig-paren">(</span><em>index</em>, <em>text</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setItemText" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></li>
+<li><strong>text</strong> – unicode</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <code class="docutils literal"><span class="pre">text</span></code> for the item on the given <code class="docutils literal"><span class="pre">index</span></code> in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.itemText"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.itemText()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setLineEdit</code><span class="sig-paren">(</span><em>edit</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setLineEdit" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>edit</strong> – <a class="reference internal" href="QLineEdit.html#PySide2.QtWidgets.QLineEdit" title="PySide2.QtWidgets.QLineEdit"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QLineEdit</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the line <code class="docutils literal"><span class="pre">edit</span></code> to use instead of the current line edit widget.</p>
+<p>The combo box takes ownership of the line edit.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.lineEdit"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.lineEdit()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setMaxCount</code><span class="sig-paren">(</span><em>max</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxCount" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>max</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxCount"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.maxCount()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setMaxVisibleItems</code><span class="sig-paren">(</span><em>maxItems</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMaxVisibleItems" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>maxItems</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.maxVisibleItems"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.maxVisibleItems()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setMinimumContentsLength</code><span class="sig-paren">(</span><em>characters</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setMinimumContentsLength" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>characters</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.minimumContentsLength"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.minimumContentsLength()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setModel</code><span class="sig-paren">(</span><em>model</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>model</strong> – <a class="reference internal" href="../QtCore/QAbstractItemModel.html#PySide2.QtCore.QAbstractItemModel" title="PySide2.QtCore.QAbstractItemModel"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QAbstractItemModel</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the model to be <code class="docutils literal"><span class="pre">model</span></code> . <code class="docutils literal"><span class="pre">model</span></code> must not be 0. If you want to clear the contents of a model, call <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.clear()</span></code></a> .</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.model"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.model()</span></code></a>  <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.clear"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.clear()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setModelColumn</code><span class="sig-paren">(</span><em>visibleColumn</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModelColumn" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>visibleColumn</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.int</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.modelColumn"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.modelColumn()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setRootModelIndex</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setRootModelIndex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> – <a class="reference internal" href="../QtCore/QModelIndex.html#PySide2.QtCore.QModelIndex" title="PySide2.QtCore.QModelIndex"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.QModelIndex</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the root model item <code class="docutils literal"><span class="pre">index</span></code> for the items in the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.rootModelIndex"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.rootModelIndex()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setSizeAdjustPolicy</code><span class="sig-paren">(</span><em>policy</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>policy</strong> – <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy"><code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.SizeAdjustPolicy</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.sizeAdjustPolicy()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setValidator</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>v</strong> – <a class="reference internal" href="../QtGui/QValidator.html#PySide2.QtGui.QValidator" title="PySide2.QtGui.QValidator"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QValidator</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the <code class="docutils literal"><span class="pre">validator</span></code> to use instead of the current validator.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The validator is removed when the <code class="xref py py-meth docutils literal"><span class="pre">editable()</span></code> property becomes <code class="docutils literal"><span class="pre">false</span></code> .</p>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.validator()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">setView</code><span class="sig-paren">(</span><em>itemView</em><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>itemView</strong> – <a class="reference internal" href="QAbstractItemView.html#PySide2.QtWidgets.QAbstractItemView" title="PySide2.QtWidgets.QAbstractItemView"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemView</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Sets the view to be used in the combobox popup to the given <code class="docutils literal"><span class="pre">itemView</span></code> . The combobox takes ownership of the view.</p>
+<p>Note: If you want to use the convenience views (like <a class="reference internal" href="QListWidget.html#PySide2.QtWidgets.QListWidget" title="PySide2.QtWidgets.QListWidget"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QListWidget</span></code></a> , <a class="reference internal" href="QTableWidget.html#PySide2.QtWidgets.QTableWidget" title="PySide2.QtWidgets.QTableWidget"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QTableWidget</span></code></a> or <a class="reference internal" href="QTreeWidget.html#PySide2.QtWidgets.QTreeWidget" title="PySide2.QtWidgets.QTreeWidget"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QTreeWidget</span></code></a> ), make sure to call <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setModel"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setModel()</span></code></a> on the combobox with the convenience widgets model before calling this function.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.view()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">showPopup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.showPopup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the list of items in the combobox. If the list is empty then the no items will be shown.</p>
+<p>If you reimplement this function to show a custom pop-up, make sure you call <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.hidePopup()</span></code></a> to reset the internal state.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.hidePopup"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.hidePopup()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">sizeAdjustPolicy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.sizeAdjustPolicy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.SizeAdjustPolicy"><code class="xref py py-attr docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.SizeAdjustPolicy</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setSizeAdjustPolicy()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">validator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.validator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="../QtGui/QValidator.html#PySide2.QtGui.QValidator" title="PySide2.QtGui.QValidator"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtGui.QValidator</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the validator that is used to constrain text input for the combobox.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setValidator"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setValidator()</span></code></a>  <code class="xref py py-meth docutils literal"><span class="pre">editable()</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view">
+<code class="descclassname">PySide2.QtWidgets.QComboBox.</code><code class="descname">view</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.view" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="QAbstractItemView.html#PySide2.QtWidgets.QAbstractItemView" title="PySide2.QtWidgets.QAbstractItemView"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QAbstractItemView</span></code></a></td>
+</tr>
+</tbody>
+</table>
+<p>Returns the list view used for the combobox popup.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView" title="PySide2.QtWidgets.PySide2.QtWidgets.QComboBox.setView"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QComboBox.setView()</span></code></a></p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <p>© 2018 The Qt Company Ltd. Documentation contributions included herein are the copyrights of their respective owners. The documentation provided herein is licensed under the terms of the <a href="http://www.gnu.org/license/fdl.html">GNU Free Documentation License version 1.3</a> as published by the Free Software Foundation. Qt and respective logos are trademarks of The Qt Company Ltd. in Finland and/or other countries worldwide. All other trademarks are property of their respective owners.</p>
+    </div></div>
+    <div id="footer" class="footer">
+    </div>
+</div>
+  </body>
+</html>

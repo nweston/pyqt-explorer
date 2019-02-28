@@ -1,4 +1,6 @@
 import qt
+import requests
+import docscraper
 from functools import partial
 
 
@@ -65,8 +67,16 @@ def signal_names(qobj):
             if isinstance(getattr(qobj, name), signal_type)]
 
 
-def doc_for_attr(obj, name):
-    return getattr(obj, name).__doc__
+def create_scraper(widget):
+    """Create a DocScraper with docs for widget and its superclasses."""
+    docs = []
+    for url in docscraper.doc_urls(widget):
+        r = requests.get(url)
+        if r.ok:
+            # r.encoding is ISO-8859-1 for some reason, but this
+            # appears to be UTF-8.
+            docs.append(r.content.decode(encoding='utf-8'))
+    return docscraper.DocScraper(docs)
 
 
 class ExplorerWidget(qt.QWidget):
@@ -80,6 +90,8 @@ documentation."""
         self.widget = widget
         widget.setParent(self)
 
+        scraper = create_scraper(widget)
+
         output = qt.QTextEdit(parent=self)
         output.setReadOnly(True)
         clear_output = qt.QPushButton(
@@ -91,7 +103,7 @@ documentation."""
         members = qt.QTreeWidget(parent=self)
         members.setHeaderHidden(True)
         members.itemClicked.connect(
-            lambda i: doc.setText(doc_for_attr(widget, i.text(0))))
+            lambda i: doc.setHtml(scraper.get_doc(i.text(0))))
         self._populate_members(members, widget)
 
         HBox(
@@ -152,7 +164,7 @@ class ExplorerDialog(qt.QDialog):
     def __init__(self, widget, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self._explorer = ExplorerWidget(widget)
-        self.setMinimumSize(800, 1000)
+        self.setMinimumSize(1200, 1000)
         HBox(self, children=[self._explorer])
 
 

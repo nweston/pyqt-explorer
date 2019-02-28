@@ -1,0 +1,224 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>QWidget &#8212; Qt for Python</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '5.12.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="search" title="Search" href="../../search.html" />
+  <link rel="stylesheet" type="text/css" href="/style/pyside.css" />
+  <link rel="icon" type="image/png" href="/style/pyside-32px.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/style/pyside-16px.png" sizes="16x16" />
+  <script type="text/javascript"> wpThemeFolder = 'http://qt.io/wp-content/themes/oneqt'; </script>
+  <script type="text/javascript" src="/scripts/main.js"></script>
+  <script type="text/javascript" src="/scripts/extras.js"></script>
+  <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-54043535-2', 'qt.io');
+    ga('set', 'forceSSL', true);
+    ga('send', 'pageview');
+  </script>
+
+  </head>
+  <body>
+<div id="container">
+    <div class="header">
+        <div class="header_container">
+            <header id="navbar">
+            </header>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-rounded">
+            <div class="navigationbar">
+                <ul class="sub-navigation">
+                    <li><a href="http://wiki.qt.io/">Wiki</a></li>
+                    <li><a href="https://doc.qt.io/">Documentation</a></li>
+                    <li><a href="http://forum.qt.io/">Forum</a></li>
+                    <li><a href="https://bugreports.qt.io/">Bug Reports</a></li>
+                    <li><a href="https://codereview.qt-project.org/">Code Review</a></li>
+                </ul>
+                <div id="main_title_bar"><h1>Qt Documentation</h1></div>
+                <div class="related">
+                    <ul>
+                        
+                        <li><a href="../../index.html">Qt for Python 5.12</a></li> 
+                    </ul>
+                </div>
+            </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">QWidget</a><ul>
+<li><a class="reference internal" href="#synopsis">Synopsis</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#virtual-functions">Virtual functions</a></li>
+<li><a class="reference internal" href="#slots">Slots</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#static-functions">Static functions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#detailed-description">Detailed Description</a><ul>
+<li><a class="reference internal" href="#top-level-and-child-widgets">Top-Level and Child Widgets</a></li>
+<li><a class="reference internal" href="#composite-widgets">Composite Widgets</a></li>
+<li><a class="reference internal" href="#custom-widgets-and-painting">Custom Widgets and Painting</a></li>
+<li><a class="reference internal" href="#size-hints-and-size-policies">Size Hints and Size Policies</a></li>
+<li><a class="reference internal" href="#events">Events</a></li>
+<li><a class="reference internal" href="#groups-of-functions-and-properties">Groups of Functions and Properties</a></li>
+<li><a class="reference internal" href="#widget-style-sheets">Widget Style Sheets</a></li>
+<li><a class="reference internal" href="#transparency-and-double-buffering">Transparency and Double Buffering</a></li>
+<li><a class="reference internal" href="#creating-translucent-windows">Creating Translucent Windows</a></li>
+<li><a class="reference internal" href="#native-widgets-vs-alien-widgets">Native Widgets vs Alien Widgets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" id="q" size="18" />
+      <input type="submit" value="Go" id="search_button" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="module-PySide2.QtWidgets"></span><div class="section" id="qwidget">
+<span id="id1"></span><h1>QWidget<a class="headerlink" href="#qwidget" title="Permalink to this headline">¶</a></h1>
+</div>
+</div>
+<div class="section" id="static-functions">
+<h3>Static functions<a class="headerlink" href="#static-functions" title="Permalink to this headline">¶</a></h3>
+<div class="function-list docutils container">
+<ul class="simple">
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.createWindowContainer" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.createWindowContainer"><code class="xref py py-meth docutils literal"><span class="pre">createWindowContainer</span></code></a> (window[, parent=nullptr[, flags=Qt.WindowFlags()]])</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.find" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.find"><code class="xref py py-meth docutils literal"><span class="pre">find</span></code></a> (arg__1)</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.keyboardGrabber" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.keyboardGrabber"><code class="xref py py-meth docutils literal"><span class="pre">keyboardGrabber</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.mouseGrabber" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.mouseGrabber"><code class="xref py py-meth docutils literal"><span class="pre">mouseGrabber</span></code></a> ()</li>
+<li>def <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setTabOrder" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setTabOrder"><code class="xref py py-meth docutils literal"><span class="pre">setTabOrder</span></code></a> (arg__1, arg__2)</li>
+</ul>
+</div>
+</div>
+</div>
+</div></blockquote>
+<dl class="class">
+<dt id="PySide2.QtWidgets.QWidget">
+<em class="property">class </em><code class="descclassname">PySide2.QtWidgets.</code><code class="descname">QWidget</code><span class="sig-paren">(</span><span class="optional">[</span><em>parent=nullptr</em><span class="optional">[</span>, <em>f=Qt.WindowFlags()</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.QWidget" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>f</strong> – <code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.Qt.WindowFlags</span></code></li>
+<li><strong>parent</strong> – <a class="reference internal" href="#PySide2.QtWidgets.QWidget" title="PySide2.QtWidgets.QWidget"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtWidgets.QWidget</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Constructs a widget which is a child of <code class="docutils literal"><span class="pre">parent</span></code> , with widget flags set to <code class="docutils literal"><span class="pre">f</span></code> .</p>
+<p>If <code class="docutils literal"><span class="pre">parent</span></code> is 0, the new widget becomes a window. If <code class="docutils literal"><span class="pre">parent</span></code> is another widget, this widget becomes a child window inside <code class="docutils literal"><span class="pre">parent</span></code> . The new widget is deleted when its <code class="docutils literal"><span class="pre">parent</span></code> is deleted.</p>
+<p>The widget flags argument, <code class="docutils literal"><span class="pre">f</span></code> , is normally 0, but it can be set to customize the frame of a window (i.e. <code class="docutils literal"><span class="pre">parent</span></code> must be 0). To customize the frame, use a value composed from the bitwise OR of any of the <code class="xref py py-class docutils literal"><span class="pre">window</span> <span class="pre">flags</span></code> .</p>
+<p>If you add a child widget to an already visible widget you must explicitly show the child to make it visible.</p>
+<p>Note that the X11 version of Qt may not be able to deliver all combinations of style flags on all systems. This is because on X11, Qt can only ask the window manager, and the window manager can override the application’s settings. On Windows, Qt can set whatever flags you want.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.windowFlags" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.windowFlags"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QWidget.windowFlags()</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.RenderFlag">
+<code class="descclassname">PySide2.QtWidgets.QWidget.</code><code class="descname">RenderFlag</code><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.RenderFlag" title="Permalink to this definition">¶</a></dt>
+<dd><p>This enum describes how to render the widget when calling <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.render" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.render"><code class="xref py py-meth docutils literal"><span class="pre">QWidget.render()</span></code></a> .</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Constant</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>QWidget.DrawWindowBackground</td>
+<td>If you enable this option, the widget’s background is rendered into the target even if <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.autoFillBackground" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.autoFillBackground"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QWidget.autoFillBackground()</span></code></a> is not set. By default, this option is enabled.</td>
+</tr>
+<tr class="row-odd"><td>QWidget.DrawChildren</td>
+<td>If you enable this option, the widget’s children are rendered recursively into the target. By default, this option is enabled.</td>
+</tr>
+<tr class="row-even"><td>QWidget.IgnoreMask</td>
+<td>If you enable this option, the widget’s <a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.mask" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.mask"><code class="xref py py-meth docutils literal"><span class="pre">QWidget.mask()</span></code></a> is ignored when rendering into the target. By default, this option is disabled.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.acceptDrops">
+<code class="descclassname">PySide2.QtWidgets.QWidget.</code><code class="descname">acceptDrops</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.acceptDrops" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-class docutils literal"><span class="pre">PySide2.QtCore.bool</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setAcceptDrops" title="PySide2.QtWidgets.PySide2.QtWidgets.QWidget.setAcceptDrops"><code class="xref py py-meth docutils literal"><span class="pre">PySide2.QtWidgets.QWidget.setAcceptDrops()</span></code></a></p>
+</div>
+</dd></dl>
+
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <p>© 2018 The Qt Company Ltd. Documentation contributions included herein are the copyrights of their respective owners. The documentation provided herein is licensed under the terms of the <a href="http://www.gnu.org/license/fdl.html">GNU Free Documentation License version 1.3</a> as published by the Free Software Foundation. Qt and respective logos are trademarks of The Qt Company Ltd. in Finland and/or other countries worldwide. All other trademarks are property of their respective owners.</p>
+    </div></div>
+    <div id="footer" class="footer">
+    </div>
+</div>
+  </body>
+</html>
