@@ -1,3 +1,4 @@
+import argparse
 import qt
 import requests
 import docscraper
@@ -186,9 +187,23 @@ def explore(widget):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        'class_name', help='Create a widget of this class to explore.')
+    parser.add_argument('--model', metavar='COLUMNS', type=int,
+                        help='Create a model for the widget.')
+    args = parser.parse_args()
+
     app = qt.QApplication([])
-    w = qt.QComboBox()
-    w.setEditable(True)
-    for s in ['foo', 'bar', 'baz']:
-        w.addItem(s)
+
+    w = getattr(qt, args.class_name)()
+
+    if args.model:
+        model = qt.QStandardItemModel(0, args.model)
+        for s in ['foo', 'bar', 'baz']:
+            row = [qt.QStandardItem(c)
+                   for c in [s] + list(map(str, range(args.model - 1)))]
+            model.appendRow(row)
+        print(w, model)
+        w.setModel(model)
     explore(w)
